@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'record-albums'`, () => {
+  it(`should have as title 'Carly\'s Record Collection'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('record-albums');
+    expect(app.title).toEqual('Carly\'s Record Collection');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('record-albums app is running!');
+    expect(compiled.querySelector('h1').textContent).toContain('Carly\'s Record Collection');
   });
 });
