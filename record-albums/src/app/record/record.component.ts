@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Record } from "./record";
 
 @Component({
   selector: 'app-record',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecordComponent implements OnInit {
 
-  constructor() { }
+  public record: Record;
+
+  constructor() { 
+    this.record =  {
+      title: 'Sam\s Town',
+      artist: 'The Killers',
+      genre: 'Indie Dance Rock',
+      releaseYear: 2006
+    }
+  }
 
   ngOnInit(): void {
   }
