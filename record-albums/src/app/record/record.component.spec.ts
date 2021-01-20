@@ -17,6 +17,14 @@ describe('RecordComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RecordComponent);
     component = fixture.componentInstance;
+
+    fixture.componentInstance.record = {
+      title: 'Sam\s Town',
+      artist: 'The Killers',
+      genre: 'Indie Dance Rock',
+      releaseYear: 2006
+    };
+
     fixture.detectChanges();
   });
 
@@ -31,6 +39,26 @@ describe('RecordComponent', () => {
       genre: 'Indie Dance Rock',
       releaseYear: 2006
     };
+
+    fixture.detectChanges();
+    expect(component.record).toEqual(expectedRecord);
+  });
+
+  it('should have another record', () => {
+    const expectedRecord: Record = {
+      title: 'One More Light',
+      artist: 'Linkin Park',
+      genre: 'Metal',
+      releaseYear: 2017
+    };
+
+    fixture.componentInstance.record = {
+      title: 'One More Light',
+      artist: 'Linkin Park',
+      genre: 'Metal',
+      releaseYear: 2017
+    };
+    fixture.detectChanges();
 
     expect(component.record).toEqual(expectedRecord);
   });

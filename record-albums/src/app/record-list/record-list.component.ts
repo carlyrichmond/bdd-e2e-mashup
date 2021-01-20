@@ -8,12 +8,12 @@ import { Record } from '../record/record';
 })
 export class RecordListComponent implements OnInit {
 
-  private records: Record[];
+  public records: Record[];
 
   constructor() { 
     this.records = [
       {
-        title: 'Sam\s Town',
+        title: 'Sam\'s Town',
         artist: 'The Killers',
         genre: 'Indie Dance Rock',
         releaseYear: 2006
@@ -23,7 +23,7 @@ export class RecordListComponent implements OnInit {
         artist: 'Paramore',
         genre: 'Pop Punk',
         releaseYear: 2007
-      },
+      }
     ]
   }
 

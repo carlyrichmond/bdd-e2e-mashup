@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Record } from "./record";
 
 @Component({
@@ -8,15 +8,11 @@ import { Record } from "./record";
 })
 export class RecordComponent implements OnInit {
 
-  public record: Record;
+  @Input()
+  public record!: Record;
 
   constructor() { 
-    this.record =  {
-      title: 'Sam\s Town',
-      artist: 'The Killers',
-      genre: 'Indie Dance Rock',
-      releaseYear: 2006
-    }
+
   }
 
   ngOnInit(): void {

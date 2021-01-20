@@ -1,1 +1,5 @@
-<p>record-list works!</p>
+<ul>
+    <li *ngFor="let record of records">
+        <app-record [record]="record"></app-record>
+    </li>
+</ul>
