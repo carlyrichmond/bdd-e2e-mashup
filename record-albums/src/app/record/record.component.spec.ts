@@ -44,7 +44,7 @@ describe('RecordComponent', () => {
     expect(component.record).toEqual(expectedRecord);
   });
 
-  it('should have updated record for rereleased record', () => {
+  it('should have updated record for re-released record', () => {
     const expectedRecord: Record = {
       title: 'Sam\s Town',
       artist: 'The Killers',
