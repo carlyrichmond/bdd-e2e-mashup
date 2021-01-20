@@ -44,20 +44,15 @@ describe('RecordComponent', () => {
     expect(component.record).toEqual(expectedRecord);
   });
 
-  it('should have another record', () => {
+  it('should have updated record for rereleased record', () => {
     const expectedRecord: Record = {
-      title: 'One More Light',
-      artist: 'Linkin Park',
-      genre: 'Metal',
+      title: 'Sam\s Town',
+      artist: 'The Killers',
+      genre: 'Indie Dance Rock',
       releaseYear: 2017
     };
 
-    fixture.componentInstance.record = {
-      title: 'One More Light',
-      artist: 'Linkin Park',
-      genre: 'Metal',
-      releaseYear: 2017
-    };
+    fixture.componentInstance.record.releaseYear = 2017
     fixture.detectChanges();
 
     expect(component.record).toEqual(expectedRecord);
