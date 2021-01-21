@@ -25,6 +25,11 @@ Then('I should see the following artists', async (dataTable: TableDefinition) =>
     return recordItem[0];
   });
 
-  expect(await page.getArtists()).to.contain(expectedArtists[0]);
-  expect(await page.getArtists()).to.contain(expectedArtists[1]);
+  const artists: string[] = await page.getArtists();
+  expect(artists.length).to.eq(expectedArtists.length);
+
+  for (let i in artists) {
+    expect(artists[i]).to.eq(expectedArtists[i])
+  }
+  
 });

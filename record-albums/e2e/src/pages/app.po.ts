@@ -14,7 +14,7 @@ export class AppPage {
   }
 
   async getArtists(): Promise<string[]> {
-    return $$('.record-item > .artist').map(element => {
+    return $$('.record-item > .record-details > .artist').map(element => {
       return element?.getText(); }
       );
   }

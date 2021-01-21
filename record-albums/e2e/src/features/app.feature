@@ -6,6 +6,7 @@ Feature: Go to homepage
     When I do nothing
     Then I should see the title "Carly's Record Collection"
     Then I should see the following artists
-        | artist        |
-        | The Killers   |
-        | Paramore      |
+        | artist            |
+        | The Killers       |
+        | Paramore          |
+        | Three Days Grace  |
