@@ -1,2 +1,16 @@
+$element-height: 200px
+    
 .record-item
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+    display: grid
+    grid-template-columns: [photo] 45% [bio]
+    grid-template-rows: [first] 40% [second] 20% [third] 20% [fourth] 20% 
+
+    .record-cover
+        grid-column: 1
+        height: 300px
+        width: 300px
+        align-self: center
+
+    .record-attribute
+        grid-column: 2

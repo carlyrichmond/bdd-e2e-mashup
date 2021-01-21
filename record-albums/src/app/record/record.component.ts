@@ -16,6 +16,15 @@ export class RecordComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.defaultUnknownAlbumCoverPaths();
+  }
+
+  private defaultUnknownAlbumCoverPaths(): void {
+    const defaultAlbumCoverPath: string = '../../assets/images/blank_record.jfif';
+    
+    if (!this.record.albumCoverPath) {
+        this.record.albumCoverPath = defaultAlbumCoverPath;
+    }
   }
 
 }
