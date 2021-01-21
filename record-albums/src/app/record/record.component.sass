@@ -1,16 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+    
 $element-height: 200px
     
 .record-item
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
     display: grid
+    width: 50%
+    min-width: 650px
     grid-template-columns: [photo] 45% [bio]
     grid-template-rows: [first] 40% [second] 20% [third] 20% [fourth] 20% 
 
     .record-cover
         grid-column: 1
-        height: 300px
-        width: 300px
-        align-self: center
+        grid-row-end: span 4
 
     .record-attribute
         grid-column: 2
+        font-family: Roboto
+
+    .title
+        font-size: xx-large
+        font-family: Open Sans
+        font-weight: bold
+
+    .artist
+        font-style: italic
