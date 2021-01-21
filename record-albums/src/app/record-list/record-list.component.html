@@ -1,5 +1,7 @@
-<ul>
-    <li *ngFor="let record of records">
-        <app-record [record]="record"></app-record>
-    </li>
-</ul>
+<div class="record-list-container">
+    <ul class="record-list">
+        <li *ngFor="let record of records">
+            <app-record [record]="record"></app-record>
+        </li>
+    </ul>
+</div>

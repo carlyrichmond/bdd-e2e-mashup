@@ -17,7 +17,7 @@ export class RecordListComponent implements OnInit {
         artist: 'The Killers',
         genre: 'Indie Dance Rock',
         releaseYear: 2006,
-        //albumCoverPath: '../../assets/images/the_killers_sams_town.jpg'
+        albumCoverPath: '../../assets/images/the_killers_sams_town.jpg'
         
       },
       {
@@ -26,6 +26,12 @@ export class RecordListComponent implements OnInit {
         genre: 'Pop Punk',
         releaseYear: 2007,
         albumCoverPath: '../../assets/images/paramore_riot.jpg'
+      },
+      {
+        title: 'Outsider',
+        artist: 'Three Days Grace',
+        genre: 'Metal',
+        releaseYear: 2018
       }
     ]
   }

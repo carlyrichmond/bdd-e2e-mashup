@@ -1,7 +1,9 @@
 <div class="record-item">
     <img class="record-cover" [src]='record.albumCoverPath' width="300px" height="300px">
-    <p class="title record-attribute">{{ record.title }}</p>
-    <p class="artist record-attribute">{{ record.artist }}</p>
-    <p class="record-attribute">{{ record.genre }}</p>
-    <p class="record-attribute">{{ record.releaseYear }}</p>
+    <div class="record-details">
+        <p class="title record-attribute">{{ record.title }}</p>
+        <p class="artist record-attribute">{{ record.artist }}</p>
+        <p class="record-attribute">{{ record.genre }}</p>
+        <p class="record-attribute">{{ record.releaseYear }}</p>
+    </div>
 </div>
