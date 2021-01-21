@@ -3,4 +3,5 @@ export interface Record {
     artist: string;
     genre: string;
     releaseYear: number;
+    albumCoverPath?: string;
 }
