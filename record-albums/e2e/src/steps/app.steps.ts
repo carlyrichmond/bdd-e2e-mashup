@@ -2,7 +2,6 @@ import { Before, Given, TableDefinition, Then, When } from 'cucumber';
 import { expect } from 'chai';
 
 import { AppPage } from '../pages/app.po';
-import { browser } from 'protractor';
 
 let page: AppPage;
 

@@ -1,4 +1,4 @@
-import { $$, browser, by, element, WebElement } from 'protractor';
+import { $, $$, browser, by, element } from 'protractor';
 
 export class AppPage {
   async navigateTo(): Promise<unknown> {
@@ -10,7 +10,7 @@ export class AppPage {
   }
 
   async getArtist(): Promise<string> {
-    return element(by.css('.artist')).getText();
+    return $('.artist').getText();
   }
 
   async getArtists(): Promise<string[]> {
