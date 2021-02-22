@@ -9,10 +9,6 @@ export class AppPage {
     return element(by.css('h1')).getText();
   }
 
-  async getArtist(): Promise<string> {
-    return $('.artist').getText();
-  }
-
   async getArtists(): Promise<string[]> {
     return $$('.record-item > .record-details > .artist').map(element => {
       return element?.getText(); }
