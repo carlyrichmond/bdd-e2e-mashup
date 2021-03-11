@@ -4,7 +4,7 @@ This project showcases an example of combining Cucumber Specifications with e2e 
 
 1. [Angular](https://angular.io/)
 2. [Cucumber BDD Framework](https://cucumber.io/)
-3. [Protractor e2e Testing Framework](https://www.protractortest.org/#/)
+3. [Cypress Testing Framework](https://www.cypress.io/)
 4. [Chai Assertion Library](https://www.chaijs.com/)
 
 ## Running Locally
