@@ -28,7 +28,7 @@
     "@angular-devkit/build-angular": "~0.1100.5",
     "@angular/cli": "~11.0.5",
     "@angular/compiler-cli": "~11.0.5",
-    "@types/chai": "^4.2.14",
+    "@types/chai": "^4.2.19",
     "@types/cucumber": "^6.0.1",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
