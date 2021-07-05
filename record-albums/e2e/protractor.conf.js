@@ -11,6 +11,9 @@ exports.config = {
     './src/features/*.feature'
   ],
   capabilities: {
+    chromeOptions: {
+      args: [ "--headless" ]
+    },
     browserName: 'chrome'
   },
   directConnect: true,
