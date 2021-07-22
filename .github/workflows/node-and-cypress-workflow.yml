@@ -37,4 +37,3 @@ jobs:
           browser: chrome
           headless: true
           start: cd record-albums && npm start
-    - run: cd record-albums && npm run e2e
