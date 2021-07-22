@@ -35,8 +35,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Install root dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Start server in the background
+        run: cd record-albums && npm start
+
       - uses: cypress-io/github-action@v2
         with:
           browser: chrome
           headless: true
-          command: cd record-albums && npm run e2e
