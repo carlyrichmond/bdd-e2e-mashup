@@ -118,7 +118,7 @@
           "options": {
             "devServerTarget": "record-albums:serve",
             "watch": true,
-            "headless": false
+            "headless": true
           },
           "configurations": {
             "production": {
