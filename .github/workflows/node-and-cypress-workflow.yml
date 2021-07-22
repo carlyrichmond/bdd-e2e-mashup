@@ -21,7 +21,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build and run e2e suite ${{ matrix.node-version }}
+    
+    - name: Build check ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
@@ -29,19 +30,13 @@ jobs:
     - run: cd record-albums && npm ci
     - run: cd record-albums && npm run build --if-present
 
-  cypress-run:
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install root dependencies
-        uses: bahmutov/npm-install@v1
-
-      - name: Start server in the background
+    - name: Unit Test check
+    - run: cd record-albums && npm run test-headless    
+    
+    - name: Start server in the background
         run: cd record-albums && npm start
 
-      - uses: cypress-io/github-action@v2
+    - uses: cypress-io/github-action@v2
         with:
           browser: chrome
           headless: true
