@@ -33,4 +33,7 @@ jobs:
 
     - name: Running e2e suite
       uses: cypress-io/github-action@v2
-    - run: cd record-albums && npm run e2e
+        with:
+          browser: chrome
+          headless: true
+          start: cd record-albums && npm start
