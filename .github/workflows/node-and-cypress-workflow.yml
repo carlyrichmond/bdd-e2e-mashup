@@ -29,4 +29,8 @@ jobs:
     - run: cd record-albums && npm ci
     - run: cd record-albums && npm run build --if-present
     - run: cd record-albums && npm run test-headless
-    - run: cd record-albums && npm run e2e
+    - name: Cypress run
+       uses: cypress-io/github-action@v2
+       with:
+         build: npm run build
+         start: npm start
