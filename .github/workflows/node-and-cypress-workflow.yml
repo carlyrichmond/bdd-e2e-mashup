@@ -34,7 +34,7 @@ jobs:
     - run: cd record-albums && npm run test-headless    
     
     - name: Start server in the background
-        run: cd record-albums && npm start
+    - run: cd record-albums && npm start
 
     - uses: cypress-io/github-action@v2
         with:
