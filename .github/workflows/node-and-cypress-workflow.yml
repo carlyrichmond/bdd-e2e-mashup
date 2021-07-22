@@ -39,3 +39,5 @@ jobs:
         with:
           browser: chrome
           headless: true
+          start: cd record-albums && npm start
+          working-directory: record-albums
