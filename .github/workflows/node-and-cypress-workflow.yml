@@ -38,6 +38,6 @@ jobs:
 
     - name: Run e2e suite
     - uses: cypress-io/github-action@v2
-        with:
-          browser: chrome
-          headless: true
+      with:
+        browser: chrome
+        headless: true
