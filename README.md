@@ -26,3 +26,4 @@ This project forms the basis of some content by the author for showcasing the po
 1. LJC Lightning Talk: [The Ultimate Mashup](https://youtu.be/-uPo1deQvcQ)
 2. Front Endgineers Community Talk: [The Ultimate Mashup](https://www.meetup.com/Front-Endgineers-London/events/276397627/)
 3. BDD & e2e Testing Blog: [Mix It Up](https://carlyrichmond.com/2021/02/15/mix-it-up/)
+4. [Work in process monorepo showcasing e2e usage in Nx and React](https://github.com/carlyrichmond/record-collection).
