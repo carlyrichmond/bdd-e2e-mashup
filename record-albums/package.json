@@ -32,7 +32,7 @@
     "@types/chai": "^4.2.14",
     "@types/cucumber": "^6.0.1",
     "@types/jasmine": "~3.9.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^16.10.2",
     "chai": "^4.2.0",
     "codelyzer": "^6.0.2",
     "cucumber": "^6.0.5",
