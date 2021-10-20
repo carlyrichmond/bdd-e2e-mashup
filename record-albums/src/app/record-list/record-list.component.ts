@@ -10,7 +10,7 @@ export class RecordListComponent implements OnInit {
 
   public records: Record[];
 
-  constructor() { 
+  constructor() {
     this.records = [
       {
         title: 'Sam\'s Town',
@@ -18,7 +18,7 @@ export class RecordListComponent implements OnInit {
         genre: 'Indie Dance Rock',
         releaseYear: 2006,
         albumCoverPath: '../../assets/images/the_killers_sams_town.jpg'
-        
+
       },
       {
         title: 'Riot!',
@@ -33,7 +33,7 @@ export class RecordListComponent implements OnInit {
         genre: 'Metal',
         releaseYear: 2018
       }
-    ]
+    ];
   }
 
   ngOnInit(): void {

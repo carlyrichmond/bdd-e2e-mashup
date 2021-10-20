@@ -55,7 +55,7 @@ describe('RecordComponent', () => {
       albumCoverPath: 'my_cover_image.jpg'
     };
 
-    fixture.componentInstance.record.releaseYear = 2017
+    fixture.componentInstance.record.releaseYear = 2017;
     fixture.detectChanges();
 
     expect(component.record).toEqual(expectedRecord);

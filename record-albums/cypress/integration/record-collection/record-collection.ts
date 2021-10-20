@@ -1,5 +1,5 @@
+import { TableDefinition } from "cucumber";
 import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
-import { TableDefinition } from "cypress-cucumber-preprocessor";
 
 Given("I am on the home page", () => {
   cy.visit('/');
@@ -14,7 +14,7 @@ Then('I should see the title {string}', (expectedTitle: string) => {
 });
 
 Then('I should see the following artists', (dataTable: TableDefinition) => { 
-  const expectedArtists: string[] = dataTable.rows().map(recordItem => {
+  const expectedArtists: string[] = dataTable.rows().map((recordItem: string[]) => {
     return recordItem[0];
   });
 
