@@ -20,8 +20,8 @@ Then('I should see the following artists', (dataTable: TableDefinition) => {
 
   cy.get('.record-item > .record-details > .artist').should((artists) => {
     expect(artists).to.have.length(3);
-    expect(artists.eq(0)).to.contain(expectedArtists[0]);
-    expect(artists.eq(1)).to.contain(expectedArtists[1]);
-    expect(artists.eq(2)).to.contain(expectedArtists[2]);
+    expect(artists[0].innerText).to.contain(expectedArtists[0]);
+    expect(artists[1].innerText).to.contain(expectedArtists[1]);
+    expect(artists[2].innerText).to.contain(expectedArtists[2]);
   })
 });
